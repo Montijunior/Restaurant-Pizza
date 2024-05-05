@@ -1,11 +1,14 @@
-import '../styles/home.css';
 import heroImage from '../assets/chief.jpg'
 
 const contentPage = document.querySelector("#content");
 // load home page
 export default function loadHomePage(){
-    //do not overwrite once click
+    
     contentPage.innerHTML = "";
+    //check if there menuStyle and remove
+    contentPage.classList.remove("menuStyle");
+    contentPage.classList.remove("contactStyle");
+    contentPage.classList.add("homeStyle")
 
     // restaurant title
     const title = document.createElement("h1");

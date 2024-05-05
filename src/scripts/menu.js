@@ -1,4 +1,3 @@
-import '../styles/menu.css';
 import pizzaOne from '../assets/carne.png';
 import pizzaTwo from '../assets/colorato.png';
 import pizzaThree from '../assets/crema.png';
@@ -15,12 +14,10 @@ const contentPage = document.querySelector("#content");
 export default function loadMenu(){
     contentPage.innerHTML = "";
 
-    //style the contentPage
-    contentPage.style.display = "grid";
-    contentPage.style.gridTemplateColumns = "repeat(2, 1fr)";
-    contentPage.style.gap = "40px";
-    contentPage.style.alignItems = "center";
-    contentPage.style.justifyContent = "center";
+    //check if we're on home, menu or about page to add relevant styles
+    contentPage.classList.remove("homeStyle")
+    contentPage.classList.remove("contactStyle");
+    contentPage.classList.add("menuStyle")
 
     //pizza Images
     const imageOne  = document.createElement("img");
