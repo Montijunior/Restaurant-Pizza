@@ -40,6 +40,15 @@ button:hover {
     padding: 3rem;
 }
 
+/* menu styles */
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
 footer {
     display: flex;
     align-items: center;
