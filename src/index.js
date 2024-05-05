@@ -21,16 +21,16 @@ buttons.forEach((button) =>{
     })
 })
 
-//load home page when the home button is clicked
-homeButton.addEventListener("click", loadHomePage);
-console.log("webpack environment ready");
 
-//load menu on click
+homeButton.addEventListener("click", loadHomePage);
+
+
+
 menuButton.addEventListener("click", loadMenu)
 
-//load contact page
+
 contactButton.addEventListener("click", loadContactPage);
 
 
-//window loads home page
+
 window.onload = loadNow();

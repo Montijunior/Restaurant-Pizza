@@ -7,14 +7,14 @@ import pizzaSix from '../assets/pepe.png';
 import pizzaSeven from '../assets/pomodoro.png';
 import pizzaEight from '../assets/salsiccia.png';
 
-//reference the content
+
 const contentPage = document.querySelector("#content");
 
-//load menu function
+
 export default function loadMenu(){
     contentPage.innerHTML = "";
 
-    //check if we're on home, menu or about page to add relevant styles
+    
     contentPage.classList.remove("homeStyle")
     contentPage.classList.remove("contactStyle");
     contentPage.classList.add("menuStyle")
